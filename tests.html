@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pruebas · Mi Barra de Autor</title>
+  <style>
+    :root { color-scheme: dark; --bg: #121212; --surface: #1E1E1E; --text: #EDEDED; --muted: #A3A3A3; --ok: #4ADE80; --fail: #F87171; --accent: #D97706; }
+    body { margin: 0; padding: 16px; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, sans-serif; }
+    h1 { font-size: 1.25rem; margin: 0 0 4px; }
+    #summary { color: var(--muted); margin-bottom: 16px; }
+    ul { list-style: none; padding: 0; margin: 0; }
+    li { background: var(--surface); padding: 8px 12px; border-radius: 6px; margin-bottom: 4px; }
+    .ok::before { content: "✓ "; color: var(--ok); }
+    .fail::before { content: "✗ "; color: var(--fail); }
+    .error { display: block; color: var(--fail); font-size: 0.875rem; }
+  </style>
+</head>
+<body>
+  <h1>Pruebas de catálogo y motores</h1>
+  <p id="summary">Ejecutando…</p>
+  <ul id="results"></ul>
+  <script type="module">
+    import { runTests } from "./js/tests.js";
+    const results = runTests();
+    const failed = results.filter((r) => !r.ok).length;
+    document.getElementById("summary").textContent = `${results.length} pruebas · ${results.length - failed} ok · ${failed} fallas`;
+    const list = document.getElementById("results");
+    for (const r of results) {
+      const li = document.createElement("li");
+      li.className = r.ok ? "ok" : "fail";
+      li.textContent = r.name;
+      if (!r.ok) {
+        const span = document.createElement("span");
+        span.className = "error";
+        span.textContent = r.error;
+        li.appendChild(span);
+      }
+      list.appendChild(li);
+    }
+  </script>
+</body>
+</html>
