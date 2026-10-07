@@ -1,4 +1,4 @@
-// Mi Barra de Autor · capa de UI y eventos (F1).
+// barra de autor · capa de UI y eventos (F1).
 // La lógica vive en js/ (motores puros); este archivo solo arma vistas y conecta eventos.
 
 import { INGREDIENTS, INGREDIENT_CATEGORIES } from "./data/ingredients.js";
@@ -579,7 +579,7 @@ function viewSettings() {
     const s = p.validation.summary;
     importBlock = `
       <div class="card import-summary" style="margin-top:12px">
-        <p><strong>${esc(p.fileName)}</strong></p>
+        <p>${esc(p.fileName)}</p>
         ${p.validation.errors.length ? `<p>No se puede importar:</p><ul class="errors">${p.validation.errors.map((e) => `<li>${esc(e)}</li>`).join("")}</ul>` : ""}
         ${s ? `<ul>
           <li>Recetas nuevas: ${s.recipesNew.length}</li>
@@ -806,7 +806,7 @@ function viewCompare(params) {
       <div class="cmp-cell cmp-name">${esc(FACT_LABELS[f.key])}</div>
       ${f.values.map((v, i) => `<div class="cmp-cell cmp-fact${i > 0 && v !== f.values[0] ? " d-more" : ""}">${esc(factText(f.key, v) || "–")}</div>`).join("")}`).join("");
     const summary = chosen.slice(1).map((r, k) => `
-      <li><strong>${esc(r.name)}:</strong> ${c.summary[k + 1].length ? esc(c.summary[k + 1].join(" · ")) : "mismo spec que la referencia"}</li>`).join("");
+      <li>${esc(r.name)}: ${c.summary[k + 1].length ? esc(c.summary[k + 1].join(" · ")) : "mismo spec que la referencia"}</li>`).join("");
     table = `
       <div class="card cmp-grid" style="--cols:${cols}" role="table" aria-label="Comparación de specs">${head}${rows}${facts}</div>
       <p class="muted small">▲ más · ▼ menos · + agregado · — no lo lleva, siempre respecto de la referencia. Cantidades para 1 porción, en ${prefs.unit}.</p>
@@ -867,12 +867,12 @@ function render({ focus = false } = {}) {
   const main = document.getElementById("main");
   let html;
   let nav;
-  let title = "Mi Barra de Autor";
+  let title = "barra de autor";
   if (parts[0] === "recetas") { html = viewRecipes(params); nav = "recipes"; title = "Recetas · " + title; }
   else if (parts[0] === "receta") {
     const id = decodeURIComponent(parts[1] ?? "");
     html = viewRecipe(id); nav = "recipes";
-    title = (allRecipes().find((r) => r.id === id)?.name ?? "Receta") + " · Mi Barra de Autor";
+    title = (allRecipes().find((r) => r.id === id)?.name ?? "Receta") + " · barra de autor";
   }
   else if (parts[0] === "barra") {
     const id = decodeURIComponent(parts[1] ?? "");

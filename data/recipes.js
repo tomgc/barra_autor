@@ -19,7 +19,7 @@ export const RECIPES = [
   // ───────── Recetas obligatorias (§4) ─────────
   {
     id: "el-cardinale", name: "El Cardinale", family: "Negroni", source: "classic", validation: "owner",
-    image: { src: "assets/cocktails/el-cardinale.webp", thumb: "assets/cocktails/el-cardinale-256.webp", alt: "Ilustración de El Cardinale", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/el-cardinale.webp", thumb: "assets/cocktails/el-cardinale-256.webp", alt: "Ilustración de El Cardinale", artist: "barra de autor", style: "colored-pencil" },
     collections: ["martini-specs", "negroni-variations", "gin", "house"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 1.5, unit: "oz", role: "base" },
@@ -34,7 +34,7 @@ export const RECIPES = [
   },
   {
     id: "satans-tarde", name: "Satan's Tarde", family: "Highball", source: "personal", validation: "owner",
-    image: { src: "assets/cocktails/satans-tarde.webp", thumb: "assets/cocktails/satans-tarde-256.webp", alt: "Ilustración de Satan's Tarde", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/satans-tarde.webp", thumb: "assets/cocktails/satans-tarde-256.webp", alt: "Ilustración de Satan's Tarde", artist: "barra de autor", style: "colored-pencil" },
     collections: ["house", "low-abv"], baseSpirit: "vermouth",
     ingredients: [
       { ingredientId: "sweet-vermouth", amount: 1.5, unit: "oz", role: "base" },
@@ -48,7 +48,7 @@ export const RECIPES = [
   },
   {
     id: "dry-martini", name: "Dry Martini", family: "Martini", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/dry-martini.webp", thumb: "assets/cocktails/dry-martini-256.webp", alt: "Ilustración de Dry Martini", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/dry-martini.webp", thumb: "assets/cocktails/dry-martini-256.webp", alt: "Ilustración de Dry Martini", artist: "barra de autor", style: "colored-pencil" },
     collections: ["martini-specs", "gin"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 60, unit: "ml", role: "base" },
@@ -60,7 +60,7 @@ export const RECIPES = [
   },
   {
     id: "vodka-martini", name: "Vodka Martini", family: "Martini", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/vodka-martini.webp", thumb: "assets/cocktails/vodka-martini-256.webp", alt: "Ilustración de Vodka Martini", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/vodka-martini.webp", thumb: "assets/cocktails/vodka-martini-256.webp", alt: "Ilustración de Vodka Martini", artist: "barra de autor", style: "colored-pencil" },
     collections: ["martini-specs"], baseSpirit: "vodka",
     ingredients: [
       { ingredientId: "vodka", amount: 75, unit: "ml", role: "base" },
@@ -73,7 +73,7 @@ export const RECIPES = [
   },
   {
     id: "lucien-gaudin", name: "Lucien Gaudin", family: "Martini", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/lucien-gaudin.webp", thumb: "assets/cocktails/lucien-gaudin-256.webp", alt: "Ilustración de Lucien Gaudin", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/lucien-gaudin.webp", thumb: "assets/cocktails/lucien-gaudin-256.webp", alt: "Ilustración de Lucien Gaudin", artist: "barra de autor", style: "colored-pencil" },
     collections: ["martini-specs", "negroni-variations", "gin"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 45, unit: "ml", role: "base" },
@@ -88,7 +88,7 @@ export const RECIPES = [
   },
   {
     id: "perfect-negroni", name: "Perfect Negroni", family: "Negroni", source: "riff", validation: "verified",
-    image: { src: "assets/cocktails/perfect-negroni.webp", thumb: "assets/cocktails/perfect-negroni-256.webp", alt: "Ilustración de Perfect Negroni", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/perfect-negroni.webp", thumb: "assets/cocktails/perfect-negroni-256.webp", alt: "Ilustración de Perfect Negroni", artist: "barra de autor", style: "colored-pencil" },
     collections: ["negroni-variations", "gin"], baseSpirit: "gin", parentId: "negroni",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 30, unit: "ml", role: "base" },
@@ -102,7 +102,7 @@ export const RECIPES = [
   },
   {
     id: "negroni-pajarillo", name: "Negroni Pajarillo", family: "Negroni", source: "personal", validation: "approved",
-    image: { src: "assets/cocktails/negroni-pajarillo.webp", thumb: "assets/cocktails/negroni-pajarillo-256.webp", alt: "Ilustración de Negroni Pajarillo", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/negroni-pajarillo.webp", thumb: "assets/cocktails/negroni-pajarillo-256.webp", alt: "Ilustración de Negroni Pajarillo", artist: "barra de autor", style: "colored-pencil" },
     collections: ["negroni-variations", "gin", "house"], baseSpirit: "gin", parentId: "negroni",
     ingredients: [
       { ingredientId: "gin-pajarillo", amount: 30, unit: "ml", role: "base" },
@@ -115,7 +115,7 @@ export const RECIPES = [
   },
   {
     id: "vesper", name: "Vesper Martini", family: "Martini", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/vesper.webp", thumb: "assets/cocktails/vesper-256.webp", alt: "Ilustración de Vesper Martini", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/vesper.webp", thumb: "assets/cocktails/vesper-256.webp", alt: "Ilustración de Vesper Martini", artist: "barra de autor", style: "colored-pencil" },
     collections: ["martini-specs", "gin"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 45, unit: "ml", role: "base" },
@@ -129,7 +129,7 @@ export const RECIPES = [
   },
   {
     id: "elderflower-martini", name: "Elderflower Martini", family: "Martini", source: "riff", validation: "approved",
-    image: { src: "assets/cocktails/elderflower-martini.webp", thumb: "assets/cocktails/elderflower-martini-256.webp", alt: "Ilustración de Elderflower Martini", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/elderflower-martini.webp", thumb: "assets/cocktails/elderflower-martini-256.webp", alt: "Ilustración de Elderflower Martini", artist: "barra de autor", style: "colored-pencil" },
     collections: ["martini-specs", "gin"], baseSpirit: "gin", parentId: "dry-martini",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 60, unit: "ml", role: "base" },
@@ -143,7 +143,7 @@ export const RECIPES = [
   },
   {
     id: "boulevardier-seco", name: "Boulevardier Seco", family: "Negroni", source: "personal", validation: "approved",
-    image: { src: "assets/cocktails/boulevardier-seco.webp", thumb: "assets/cocktails/boulevardier-seco-256.webp", alt: "Ilustración de Boulevardier Seco", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/boulevardier-seco.webp", thumb: "assets/cocktails/boulevardier-seco-256.webp", alt: "Ilustración de Boulevardier Seco", artist: "barra de autor", style: "colored-pencil" },
     collections: ["negroni-variations", "whiskey"], baseSpirit: "whiskey", parentId: "boulevardier",
     ingredients: [
       { ingredientId: "bourbon", amount: 45, unit: "ml", role: "base" },
@@ -156,7 +156,7 @@ export const RECIPES = [
   },
   {
     id: "paper-plane-casa", name: "Paper Plane Casa", family: "Sour", source: "personal", validation: "approved",
-    image: { src: "assets/cocktails/paper-plane-casa.webp", thumb: "assets/cocktails/paper-plane-casa-256.webp", alt: "Ilustración de Paper Plane Casa", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/paper-plane-casa.webp", thumb: "assets/cocktails/paper-plane-casa-256.webp", alt: "Ilustración de Paper Plane Casa", artist: "barra de autor", style: "colored-pencil" },
     collections: ["whiskey", "sours"], baseSpirit: "whiskey", parentId: "paper-plane",
     ingredients: [
       { ingredientId: "bourbon", amount: 30, unit: "ml", role: "base" },
@@ -171,7 +171,7 @@ export const RECIPES = [
   },
   {
     id: "calafate-sour", name: "Calafate Sour", family: "Sour", source: "personal", validation: "approved",
-    image: { src: "assets/cocktails/calafate-sour.webp", thumb: "assets/cocktails/calafate-sour-256.webp", alt: "Ilustración de Calafate Sour", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/calafate-sour.webp", thumb: "assets/cocktails/calafate-sour-256.webp", alt: "Ilustración de Calafate Sour", artist: "barra de autor", style: "colored-pencil" },
     collections: ["sours", "pisco", "house"], baseSpirit: "pisco", parentId: "pisco-sour", batch: "sour",
     ingredients: [
       { ingredientId: "pisco", amount: 60, unit: "ml", role: "base" },
@@ -186,7 +186,7 @@ export const RECIPES = [
   },
   {
     id: "pisco-sour", name: "Pisco Sour Clásico", family: "Sour", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/pisco-sour.webp", thumb: "assets/cocktails/pisco-sour-256.webp", alt: "Ilustración de Pisco Sour Clásico", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/pisco-sour.webp", thumb: "assets/cocktails/pisco-sour-256.webp", alt: "Ilustración de Pisco Sour Clásico", artist: "barra de autor", style: "colored-pencil" },
     collections: ["sours", "pisco"], baseSpirit: "pisco", batch: "sour",
     ingredients: [
       { ingredientId: "pisco", amount: 60, unit: "ml", role: "base" },
@@ -202,7 +202,7 @@ export const RECIPES = [
   },
   {
     id: "mandarina-mule", name: "Mandarina Mule", family: "Mule", source: "personal", validation: "approved",
-    image: { src: "assets/cocktails/mandarina-mule.webp", thumb: "assets/cocktails/mandarina-mule-256.webp", alt: "Ilustración de Mandarina Mule", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/mandarina-mule.webp", thumb: "assets/cocktails/mandarina-mule-256.webp", alt: "Ilustración de Mandarina Mule", artist: "barra de autor", style: "colored-pencil" },
     collections: ["highballs", "house"], baseSpirit: "vodka", parentId: "moscow-mule",
     ingredients: [
       { ingredientId: "vodka", amount: 45, unit: "ml", role: "base" },
@@ -216,7 +216,7 @@ export const RECIPES = [
   },
   {
     id: "highland-sauco", name: "Highland Saúco", family: "Highball", source: "personal", validation: "approved",
-    image: { src: "assets/cocktails/highland-sauco.webp", thumb: "assets/cocktails/highland-sauco-256.webp", alt: "Ilustración de Highland Saúco", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/highland-sauco.webp", thumb: "assets/cocktails/highland-sauco-256.webp", alt: "Ilustración de Highland Saúco", artist: "barra de autor", style: "colored-pencil" },
     collections: ["highballs", "whiskey", "house"], baseSpirit: "whiskey",
     ingredients: [
       { ingredientId: "scotch", amount: 45, unit: "ml", role: "base" },
@@ -230,7 +230,7 @@ export const RECIPES = [
   },
   {
     id: "el-claridge", name: "El Claridge", family: "Martini", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/el-claridge.webp", thumb: "assets/cocktails/el-claridge-256.webp", alt: "Ilustración de El Claridge", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/el-claridge.webp", thumb: "assets/cocktails/el-claridge-256.webp", alt: "Ilustración de El Claridge", artist: "barra de autor", style: "colored-pencil" },
     collections: ["martini-specs", "gin"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 30, unit: "ml", role: "base" },
@@ -245,7 +245,7 @@ export const RECIPES = [
   },
   {
     id: "el-alfonso", name: "El Alfonso", family: "Champagne Cocktail", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/el-alfonso.webp", thumb: "assets/cocktails/el-alfonso-256.webp", alt: "Ilustración de El Alfonso", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/el-alfonso.webp", thumb: "assets/cocktails/el-alfonso-256.webp", alt: "Ilustración de El Alfonso", artist: "barra de autor", style: "colored-pencil" },
     collections: ["low-abv"], baseSpirit: "wine",
     ingredients: [
       { ingredientId: "sugar", amount: 1, unit: "cube", role: "sweetener",
@@ -261,7 +261,7 @@ export const RECIPES = [
   },
   {
     id: "vermut-cooler", name: "Vermut Cooler", family: "Highball", source: "personal", validation: "approved",
-    image: { src: "assets/cocktails/vermut-cooler.webp", thumb: "assets/cocktails/vermut-cooler-256.webp", alt: "Ilustración de Vermut Cooler", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/vermut-cooler.webp", thumb: "assets/cocktails/vermut-cooler-256.webp", alt: "Ilustración de Vermut Cooler", artist: "barra de autor", style: "colored-pencil" },
     collections: ["low-abv", "highballs", "house"], baseSpirit: "vermouth",
     ingredients: [
       { ingredientId: "sweet-vermouth", amount: 60, unit: "ml", role: "base" },
@@ -277,7 +277,7 @@ export const RECIPES = [
   // ───────── Clásicos y referencias adicionales ─────────
   {
     id: "negroni", name: "Negroni", family: "Negroni", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/negroni.webp", thumb: "assets/cocktails/negroni-256.webp", alt: "Ilustración de Negroni", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/negroni.webp", thumb: "assets/cocktails/negroni-256.webp", alt: "Ilustración de Negroni", artist: "barra de autor", style: "colored-pencil" },
     collections: ["negroni-variations", "gin"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 30, unit: "ml", role: "base" },
@@ -290,7 +290,7 @@ export const RECIPES = [
   },
   {
     id: "boulevardier", name: "Boulevardier", family: "Negroni", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/boulevardier.webp", thumb: "assets/cocktails/boulevardier-256.webp", alt: "Ilustración de Boulevardier", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/boulevardier.webp", thumb: "assets/cocktails/boulevardier-256.webp", alt: "Ilustración de Boulevardier", artist: "barra de autor", style: "colored-pencil" },
     collections: ["negroni-variations", "whiskey"], baseSpirit: "whiskey",
     ingredients: [
       { ingredientId: "bourbon", amount: 45, unit: "ml", role: "base" },
@@ -303,7 +303,7 @@ export const RECIPES = [
   },
   {
     id: "americano", name: "Americano", family: "Highball", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/americano.webp", thumb: "assets/cocktails/americano-256.webp", alt: "Ilustración de Americano", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/americano.webp", thumb: "assets/cocktails/americano-256.webp", alt: "Ilustración de Americano", artist: "barra de autor", style: "colored-pencil" },
     collections: ["negroni-variations", "low-abv"], baseSpirit: "vermouth",
     ingredients: [
       { ingredientId: "campari", amount: 30, unit: "ml", role: "base" },
@@ -317,7 +317,7 @@ export const RECIPES = [
   },
   {
     id: "manhattan", name: "Manhattan", family: "Manhattan", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/manhattan.webp", thumb: "assets/cocktails/manhattan-256.webp", alt: "Ilustración de Manhattan", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/manhattan.webp", thumb: "assets/cocktails/manhattan-256.webp", alt: "Ilustración de Manhattan", artist: "barra de autor", style: "colored-pencil" },
     collections: ["whiskey"], baseSpirit: "whiskey",
     ingredients: [
       { ingredientId: "rye", amount: 50, unit: "ml", role: "base" },
@@ -330,7 +330,7 @@ export const RECIPES = [
   },
   {
     id: "rob-roy", name: "Rob Roy", family: "Manhattan", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/rob-roy.webp", thumb: "assets/cocktails/rob-roy-256.webp", alt: "Ilustración de Rob Roy", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/rob-roy.webp", thumb: "assets/cocktails/rob-roy-256.webp", alt: "Ilustración de Rob Roy", artist: "barra de autor", style: "colored-pencil" },
     collections: ["whiskey"], baseSpirit: "whiskey", parentId: "manhattan",
     ingredients: [
       { ingredientId: "scotch", amount: 60, unit: "ml", role: "base" },
@@ -344,7 +344,7 @@ export const RECIPES = [
   },
   {
     id: "old-fashioned", name: "Old Fashioned", family: "Old Fashioned", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/old-fashioned.webp", thumb: "assets/cocktails/old-fashioned-256.webp", alt: "Ilustración de Old Fashioned", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/old-fashioned.webp", thumb: "assets/cocktails/old-fashioned-256.webp", alt: "Ilustración de Old Fashioned", artist: "barra de autor", style: "colored-pencil" },
     collections: ["whiskey"], baseSpirit: "whiskey",
     ingredients: [
       { ingredientId: "bourbon", amount: 45, unit: "ml", role: "base" },
@@ -359,7 +359,7 @@ export const RECIPES = [
   },
   {
     id: "whiskey-sour", name: "Whiskey Sour", family: "Sour", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/whiskey-sour.webp", thumb: "assets/cocktails/whiskey-sour-256.webp", alt: "Ilustración de Whiskey Sour", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/whiskey-sour.webp", thumb: "assets/cocktails/whiskey-sour-256.webp", alt: "Ilustración de Whiskey Sour", artist: "barra de autor", style: "colored-pencil" },
     collections: ["sours", "whiskey"], baseSpirit: "whiskey", batch: "sour",
     ingredients: [
       { ingredientId: "bourbon", amount: 45, unit: "ml", role: "base" },
@@ -373,7 +373,7 @@ export const RECIPES = [
   },
   {
     id: "moscow-mule", name: "Moscow Mule", family: "Mule", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/moscow-mule.webp", thumb: "assets/cocktails/moscow-mule-256.webp", alt: "Ilustración de Moscow Mule", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/moscow-mule.webp", thumb: "assets/cocktails/moscow-mule-256.webp", alt: "Ilustración de Moscow Mule", artist: "barra de autor", style: "colored-pencil" },
     collections: ["highballs"], baseSpirit: "vodka",
     ingredients: [
       { ingredientId: "vodka", amount: 45, unit: "ml", role: "base" },
@@ -386,7 +386,7 @@ export const RECIPES = [
   },
   {
     id: "dark-n-stormy", name: "Dark 'n' Stormy", family: "Mule", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/dark-n-stormy.webp", thumb: "assets/cocktails/dark-n-stormy-256.webp", alt: "Ilustración de Dark 'n' Stormy", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/dark-n-stormy.webp", thumb: "assets/cocktails/dark-n-stormy-256.webp", alt: "Ilustración de Dark 'n' Stormy", artist: "barra de autor", style: "colored-pencil" },
     collections: ["highballs"], baseSpirit: "rum",
     ingredients: [
       { ingredientId: "rum", amount: 60, unit: "ml", role: "base" },
@@ -399,7 +399,7 @@ export const RECIPES = [
   },
   {
     id: "daiquiri", name: "Daiquiri", family: "Sour", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/daiquiri.webp", thumb: "assets/cocktails/daiquiri-256.webp", alt: "Ilustración de Daiquiri", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/daiquiri.webp", thumb: "assets/cocktails/daiquiri-256.webp", alt: "Ilustración de Daiquiri", artist: "barra de autor", style: "colored-pencil" },
     collections: ["sours"], baseSpirit: "rum",
     ingredients: [
       { ingredientId: "rum", amount: 60, unit: "ml", role: "base" },
@@ -414,7 +414,7 @@ export const RECIPES = [
   },
   {
     id: "white-lady", name: "White Lady", family: "Sour", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/white-lady.webp", thumb: "assets/cocktails/white-lady-256.webp", alt: "Ilustración de White Lady", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/white-lady.webp", thumb: "assets/cocktails/white-lady-256.webp", alt: "Ilustración de White Lady", artist: "barra de autor", style: "colored-pencil" },
     collections: ["sours", "gin"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 40, unit: "ml", role: "base" },
@@ -427,7 +427,7 @@ export const RECIPES = [
   },
   {
     id: "tom-collins", name: "Tom Collins", family: "Collins", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/tom-collins.webp", thumb: "assets/cocktails/tom-collins-256.webp", alt: "Ilustración de Tom Collins", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/tom-collins.webp", thumb: "assets/cocktails/tom-collins-256.webp", alt: "Ilustración de Tom Collins", artist: "barra de autor", style: "colored-pencil" },
     collections: ["highballs", "gin"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 60, unit: "ml", role: "base" },
@@ -442,7 +442,7 @@ export const RECIPES = [
   },
   {
     id: "gin-fizz", name: "Gin Fizz", family: "Fizz", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/gin-fizz.webp", thumb: "assets/cocktails/gin-fizz-256.webp", alt: "Ilustración de Gin Fizz", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/gin-fizz.webp", thumb: "assets/cocktails/gin-fizz-256.webp", alt: "Ilustración de Gin Fizz", artist: "barra de autor", style: "colored-pencil" },
     collections: ["sours", "gin"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 45, unit: "ml", role: "base" },
@@ -457,7 +457,7 @@ export const RECIPES = [
   },
   {
     id: "gimlet", name: "Gimlet", family: "Sour", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/gimlet.webp", thumb: "assets/cocktails/gimlet-256.webp", alt: "Ilustración de Gimlet", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/gimlet.webp", thumb: "assets/cocktails/gimlet-256.webp", alt: "Ilustración de Gimlet", artist: "barra de autor", style: "colored-pencil" },
     collections: ["sours", "gin"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 60, unit: "ml", role: "base" },
@@ -470,7 +470,7 @@ export const RECIPES = [
   },
   {
     id: "chilcano", name: "Chilcano de Pisco", family: "Highball", source: "classic", validation: "verified",
-    image: { src: "assets/cocktails/chilcano.webp", thumb: "assets/cocktails/chilcano-256.webp", alt: "Ilustración de Chilcano de Pisco", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/chilcano.webp", thumb: "assets/cocktails/chilcano-256.webp", alt: "Ilustración de Chilcano de Pisco", artist: "barra de autor", style: "colored-pencil" },
     collections: ["highballs", "pisco"], baseSpirit: "pisco",
     ingredients: [
       { ingredientId: "pisco", amount: 60, unit: "ml", role: "base" },
@@ -485,7 +485,7 @@ export const RECIPES = [
   },
   {
     id: "paper-plane", name: "Paper Plane", family: "Sour", source: "author", validation: "verified",
-    image: { src: "assets/cocktails/paper-plane.webp", thumb: "assets/cocktails/paper-plane-256.webp", alt: "Ilustración de Paper Plane", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/paper-plane.webp", thumb: "assets/cocktails/paper-plane-256.webp", alt: "Ilustración de Paper Plane", artist: "barra de autor", style: "colored-pencil" },
     collections: ["whiskey", "sours"], baseSpirit: "whiskey",
     ingredients: [
       { ingredientId: "bourbon", amount: 30, unit: "ml", role: "base" },
@@ -500,7 +500,7 @@ export const RECIPES = [
   },
   {
     id: "gin-tonic", name: "Gin Tonic", family: "Highball", source: "classic", validation: "approved",
-    image: { src: "assets/cocktails/gin-tonic.webp", thumb: "assets/cocktails/gin-tonic-256.webp", alt: "Ilustración de Gin Tonic", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/gin-tonic.webp", thumb: "assets/cocktails/gin-tonic-256.webp", alt: "Ilustración de Gin Tonic", artist: "barra de autor", style: "colored-pencil" },
     collections: ["highballs", "gin"], baseSpirit: "gin",
     ingredients: [
       { ingredientId: "gin-london-dry", amount: 50, unit: "ml", role: "base" },
@@ -512,7 +512,7 @@ export const RECIPES = [
   },
   {
     id: "scotch-highball", name: "Scotch Highball", family: "Highball", source: "classic", validation: "approved",
-    image: { src: "assets/cocktails/scotch-highball.webp", thumb: "assets/cocktails/scotch-highball-256.webp", alt: "Ilustración de Scotch Highball", artist: "Mi Barra de Autor", style: "colored-pencil" },
+    image: { src: "assets/cocktails/scotch-highball.webp", thumb: "assets/cocktails/scotch-highball-256.webp", alt: "Ilustración de Scotch Highball", artist: "barra de autor", style: "colored-pencil" },
     collections: ["highballs", "whiskey"], baseSpirit: "whiskey",
     ingredients: [
       { ingredientId: "scotch", amount: 50, unit: "ml", role: "base" },

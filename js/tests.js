@@ -259,7 +259,7 @@ export function runTests() {
   test("Alfonso: espumante (top) nunca cambia; terrón no se fracciona", () => {
     eq(amounts(adjustRecipe(recById["el-alfonso"], ingById, { intensity: "strong", balance: "sweet" })), [1, 4, 15, 100], "cantidades");
   });
-  test("Daiquiri seco: azúcar en cucharitas −25 %, lima +15 %", () => {
+  test("Daiquiri seco: azúcar en cucharas de bar −25 %, lima +15 %", () => {
     eq(amounts(adjustRecipe(recById["daiquiri"], ingById, { balance: "dry" })), [60, 23, 1.5], "cantidades");
   });
 

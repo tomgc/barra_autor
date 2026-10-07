@@ -1,4 +1,4 @@
-# Mi Barra de Autor
+# barra de autor
 
 Cocktail manager personal (PWA sin servidor): inventario de barra, recetas disponibles, ajustes de spec, Modo Barra, Laboratorio, historial y sugerencias. Publicada en https://tomgc.github.io/barra_autor/ (repo `tomgc/barra_autor`, rama `main`).
 

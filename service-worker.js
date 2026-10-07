@@ -2,7 +2,7 @@
 // Estrategia stale-while-revalidate: responde con la copia guardada y la actualiza en segundo plano.
 // Al publicar cambios, subir CACHE_VERSION para que los clientes descarten la caché anterior.
 
-const CACHE_VERSION = "mba-v3";
+const CACHE_VERSION = "mba-v4";
 const PRECACHE = [
   "./",
   "./app.js",

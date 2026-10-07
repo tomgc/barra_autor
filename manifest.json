@@ -1,6 +1,6 @@
 {
-  "name": "Mi Barra de Autor",
-  "short_name": "Mi Barra",
+  "name": "barra de autor",
+  "short_name": "barra de autor",
   "description": "Cocktail manager personal: inventario de barra, recetas disponibles y laboratorio.",
   "lang": "es",
   "start_url": "./",

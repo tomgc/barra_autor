@@ -1,6 +1,6 @@
-# Mi Barra de Autor: plan de proyecto
+# barra de autor: plan de proyecto
 
-Versión 13 (2026-10-07). Leyenda: [x] hecho · [~] motor listo, falta UI · [ ] pendiente. Fuente: `mi-barra-de-autor-especificacion.md` (50 secciones).
+Versión 14 (2026-10-07). Leyenda: [x] hecho · [~] motor listo, falta UI · [ ] pendiente. Fuente: `mi-barra-de-autor-especificacion.md` (50 secciones).
 
 ## 1. Decisiones tomadas
 
@@ -18,6 +18,8 @@ Versión 13 (2026-10-07). Leyenda: [x] hecho · [~] motor listo, falta UI · [ ]
 | D11 | Dilución estimada por método con fuente (Cocktails & Bars, 2018: stir 40-45 %, shake ~30 %, con soda ~20 %); build sin mixer 20 % marcado como supuesto. Se eliminó el campo `dilution` fijo de las recetas | El campo fijo contradecía la fuente (sours marcados "alta" con ~30 %) |
 | D12 | Íconos de la PWA provisionales (copa geométrica ámbar) | Se reemplazan con el encargo de iconografía (§8) |
 | D13 | Ilustraciones dibujadas como SVG (Claude Design / Claude Code) y servidas como WebP generado en R | Tomás eligió Claude Design y aprobó el estilo del piloto; WebP evita pintar filtros SVG pesados en el teléfono |
+| D14 | El nombre del proyecto es "barra de autor", siempre en minúsculas (app, manifest, título, documentos). Respaldo: `barra-de-autor-backup-AAAA-MM-DD.json` | Indicación de Tomás (2026-10-07); los respaldos antiguos con el nombre anterior se siguen importando |
+| D15 | Reglas de texto: sin MAYÚSCULAS sostenidas salvo siglas (ABV, IBA, PWA); sin diminutivos (salvo unidades como oz); negritas solo en nombres y cifras clave | Indicación de Tomás (2026-10-07) |
 | D8 | `validation` en cada receta: owner / verified / approved | Trazabilidad de cada spec: entregada por Tomás, contrastada con la referencia, o propuesta y aprobada. |
 
 ## 2. Modelo de datos (corrección clave de la spec)

@@ -14,13 +14,13 @@ const RECIPE_KNOWN = new Set([
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export function backupFileName(date = new Date()) {
-  return `mi-barra-de-autor-backup-${isoDate(date)}.json`;
+  return `barra-de-autor-backup-${isoDate(date)}.json`;
 }
 
 /** Objeto de respaldo completo (§34). */
 export function exportBackup(state, meta = {}) {
   return {
-    app: "mi-barra-de-autor",
+    app: "barra-de-autor",
     schemaVersion: SCHEMA_VERSION,
     exportedAt: new Date().toISOString(),
     ...meta,

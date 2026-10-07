@@ -13,7 +13,7 @@ export const UNIT_LABELS = {
   ml: "ml",
   oz: "oz",
   dash: { one: "dash", many: "dashes" },
-  barspoon: { one: "cucharita de bar", many: "cucharitas de bar" },
+  barspoon: { one: "cuchara de bar", many: "cucharas de bar" },
   cube: { one: "terrón", many: "terrones" },
   unit: { one: "unidad", many: "unidades" }
 };
@@ -34,7 +34,7 @@ export function nominalMl(amount, unit) {
 /**
  * Convierte y redondea a una cantidad práctica para uso doméstico.
  * oz: múltiplos de 1/4. ml: múltiplos de 2,5 bajo 30 ml y de 5 desde 30 ml.
- * Unidades no volumétricas: enteros (dash, terrón, unidad) o medios (cucharita).
+ * Unidades no volumétricas: enteros (dash, terrón, unidad) o medios (cuchara de bar).
  * Devuelve { amount, unit, exact, approx } donde exact es el valor sin redondear.
  */
 export function practicalAmount(amount, unit, targetUnit) {

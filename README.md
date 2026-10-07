@@ -1,4 +1,4 @@
-# Mi Barra de Autor
+# barra de autor
 
 ## 1. Qué es
 
@@ -50,7 +50,7 @@ En `data/ingredients.js`, agrega un objeto con:
 
 En la pestaña Respaldo:
 
-- **Exportar** descarga `mi-barra-de-autor-backup-AAAA-MM-DD.json` con inventario, precios, favoritos, ratings, notas, recetas personales y variantes, historial, laboratorio, preferencias y `schemaVersion`.
+- **Exportar** descarga `barra-de-autor-backup-AAAA-MM-DD.json` con inventario, precios, favoritos, ratings, notas, recetas personales y variantes, historial, laboratorio, preferencias y `schemaVersion`.
 - **Importar** valida el archivo (JSON, schema, IDs, estructura, duplicados, campos desconocidos) y muestra un resumen antes de aplicar. "Combinar" agrega lo nuevo y, ante un conflicto, conserva lo actual y guarda la receta entrante como copia `-importada`. "Reemplazar todo" exige confirmación.
 - Los respaldos de versiones anteriores se migran con `migrateState()` (`js/storage.js`).
 
@@ -92,7 +92,7 @@ image: {
   src: "assets/cocktails/el-cardinale.webp",
   thumb: "assets/cocktails/el-cardinale-256.webp",
   alt: "Ilustración de El Cardinale",
-  artist: "Mi Barra de Autor",
+  artist: "barra de autor",
   style: "colored-pencil"
 }
 ```
