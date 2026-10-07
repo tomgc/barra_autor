@@ -75,21 +75,31 @@ Otros motores: escala y regla de juguera (`scaling.js`), ajustes de intensidad y
 
 ## 9. Agregar ilustraciones
 
-1. Guarda la imagen en `assets/cocktails/<id-de-la-receta>.webp` (cuadrada, 512 px).
-2. En la receta, agrega:
+Cada receta del catálogo tiene una ilustración en lápiz de colores. El flujo es SVG → WebP:
+
+1. **Dibuja el SVG** en `assets/cocktails/src/<id-de-la-receta>.svg`. Parte de una de las plantillas aprobadas (`el-cardinale`, `pisco-sour`, `gin-tonic`): lienzo 512×512, mismos `<defs>` (filtros `paper`, `pencil`, `line` y patrones), contorno `#3B332C`, sin texto dentro de la imagen y con `role="img"` y un `aria-label` en español. Vaso, hielo y garnish salen de la receta en `data/recipes.js`.
+2. **Genera los WebP** desde la consola de R, con el proyecto abierto:
+
+```r
+source(here::here("R", "10_ilustraciones_a_webp.R"))
+```
+
+   El script (paquetes `here`, `rsvg`, `webp` y `magick`) escribe `assets/cocktails/<id>.webp` (512 px) y `<id>-256.webp` (256 px), la hoja de contacto `assets/cocktails/_hoja_contacto.png` para revisar la coherencia del set, y **falla con `stop()` si alguna receta de `data/recipes.js` queda sin SVG o sin WebP**. Los WebP existen porque los filtros SVG son caros de pintar en el teléfono con muchas tarjetas a la vez.
+3. **Conecta la receta** en `data/recipes.js`:
 
 ```js
 image: {
   src: "assets/cocktails/el-cardinale.webp",
+  thumb: "assets/cocktails/el-cardinale-256.webp",
   alt: "Ilustración de El Cardinale",
   artist: "Mi Barra de Autor",
   style: "colored-pencil"
 }
 ```
 
-3. Agrega la ruta a `PRECACHE` en `service-worker.js` y sube `CACHE_VERSION`.
+4. Agrega las dos rutas a `PRECACHE` en `service-worker.js` y sube `CACHE_VERSION`.
 
-La app funciona igual si una receta no tiene imagen. La guía de estilo está en `PLAN.md` (§8) y la referencia visual en `assets/reference/`.
+Recetas sin imagen (personales, Laboratorio) usan la genérica (`assets/cocktails/src/_generica.svg` → `_generica.webp`), igual que cualquier ilustración que no cargue. El Modo Barra no muestra ilustración. La cristalería vacía está en `assets/glassware/` (SVG, de referencia para dibujar nuevas recetas). La guía de estilo está en `PLAN.md` (§8) y la referencia visual en `assets/reference/`.
 
 ## 10. Estructura JSON
 

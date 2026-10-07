@@ -50,6 +50,12 @@ export function runTests() {
     eq(new Set(RECIPES.map((r) => r.id)).size, RECIPES.length, "recetas");
     eq(new Set(INGREDIENTS.map((i) => i.id)).size, INGREDIENTS.length, "ingredientes");
   });
+  test("Toda receta del catálogo tiene image.src e image.thumb con la ruta esperada", () => {
+    // La existencia real de los archivos la verifica R/10_ilustraciones_a_webp.R.
+    const mal = RECIPES.filter((r) => r.image?.src !== `assets/cocktails/${r.id}.webp` || r.image?.thumb !== `assets/cocktails/${r.id}-256.webp`
+      || !r.image?.alt || r.image?.style !== "colored-pencil").map((r) => r.id);
+    eq(mal, [], "sin image válida");
+  });
   test("Ingredientes, colecciones, tags y parentId existen", () => {
     const cols = new Set(COLLECTIONS.map((c) => c.id));
     const tags = new Set([...PROFILE_TAGS.structure, ...PROFILE_TAGS.flavor].map((t) => t.id));

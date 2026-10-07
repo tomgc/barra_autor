@@ -21,7 +21,7 @@ Cocktail manager personal (PWA sin servidor): inventario de barra, recetas dispo
 - `assets/cocktails/`: WebP generados (`<id>.webp` 512 px, `<id>-256.webp`).
 - `assets/glassware/`: cristalería vacía en SVG.
 - `assets/reference/`: referencia de estilo (solo estilo, su contenido tiene errores).
-- `R/`: scripts en R.
+- `R/10_ilustraciones_a_webp.R`: convierte los SVG a WebP, genera la hoja de contacto y falla si falta alguna receta (usa `rsvg`, `webp`, `magick`, `here`).
 - `encargos/`: encargos redactados para Claude Code.
 - `PLAN.md`: decisiones, fases, pendientes y registro de errores. `README.md`: guía de uso y mantenimiento.
 
@@ -35,7 +35,8 @@ Cocktail manager personal (PWA sin servidor): inventario de barra, recetas dispo
 
 ## Últimos cambios
 
-- 2026-10-07: encargo de iconografía en curso (SVG por receta, WebP vía R, integración en la app).
+- 2026-10-07: iconografía integrada (campo `image` en las 36 recetas, miniaturas, ilustración en la ficha, genérica de respaldo, precache `mba-v2`, README §9).
+- 2026-10-07: 36 SVG + genérica + 11 vasos de cristalería y script R que genera los WebP (512 y 256 px).
 - 2026-10-07: plantillas de estilo aprobadas y encargo de iconografía redactado (PLAN v12).
 - 2026-10-07: app publicada en GitHub Pages (PLAN v11).
 - 2026-10-07: versión inicial (F1, F2 y F3).

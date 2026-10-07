@@ -1,6 +1,6 @@
 # Mi Barra de Autor: plan de proyecto
 
-Versión 12 (2026-10-07). Leyenda: [x] hecho · [~] motor listo, falta UI · [ ] pendiente. Fuente: `mi-barra-de-autor-especificacion.md` (50 secciones).
+Versión 13 (2026-10-07). Leyenda: [x] hecho · [~] motor listo, falta UI · [ ] pendiente. Fuente: `mi-barra-de-autor-especificacion.md` (50 secciones).
 
 ## 1. Decisiones tomadas
 
@@ -107,7 +107,7 @@ F1, F2 y F3 cerradas; validación §49 completa (ver §10). Publicada en https:/
 
 - [ ] Sesión dedicada a búsqueda intensa en internet de recetas para ampliar la biblioteca de cócteles (pedido de Tomás, 2026-10-07). Mantener criterios §3 de la spec: verificar specs con fuentes reconocidas, distinguir clásico / riff / autor / personal, no copiar texto.
 
-- [~] Encargo a Claude Code: generación de la iconografía del proyecto (pedido de Tomás, 2026-10-07). **Estado:** estilo aprobado por Tomás sobre un piloto de 3 ilustraciones hecho en Claude Design (SVG con textura de lápiz simulada); plantillas en `assets/cocktails/src/`; encargo redactado en `encargos/2026-10-07_iconografia_claude_code.md` (SVG fuente → WebP vía R). Lo que sigue en este punto queda como diseño original, reemplazado por el encargo donde difieran. Referencia de estilo: `assets/reference/estilo-iconos-referencia.png`.
+- [x] Encargo a Claude Code: generación de la iconografía del proyecto (pedido de Tomás, 2026-10-07). **Ejecutado el 2026-10-07 (pendiente de push y de revisión visual de Tomás):** 36 SVG + genérica en `assets/cocktails/src/`, 11 vasos en `assets/glassware/`, WebP 512/256 px vía `R/10_ilustraciones_a_webp.R` (hoja de contacto en `assets/cocktails/_hoja_contacto.png`), campo `image` en las 36 recetas, miniaturas en tarjetas, ilustración en la ficha, precache `mba-v2`. Lo de abajo es el diseño original; el encargo prevalece donde difieran. **Estado previo:** estilo aprobado por Tomás sobre un piloto de 3 ilustraciones hecho en Claude Design (SVG con textura de lápiz simulada); plantillas en `assets/cocktails/src/`; encargo redactado en `encargos/2026-10-07_iconografia_claude_code.md` (SVG fuente → WebP vía R). Lo que sigue en este punto queda como diseño original, reemplazado por el encargo donde difieran. Referencia de estilo: `assets/reference/estilo-iconos-referencia.png`.
   - **Estilo:** ilustración a mano en lápiz de colores, con trazo visible y sombreado por hachurado; papel color crema con textura; un halo suave de color detrás de cada vaso, del tono del cóctel; contorno del vaso fino y oscuro, con brillos blancos; líquido con degradé; hielo translúcido; garnish detallado (piel de cítrico, cereza, menta, rodaja); colores cálidos y saturados sin ser chillones; elegante, no infantil (spec §37).
   - **Qué tomar de la referencia y qué no:** solo el estilo. Su contenido tiene errores ("Negroni" repetido y dibujado como shot en capas, "Chemones" mal escrito), así que cada dibujo debe partir de la ficha real de la receta: vaso (`glass`), color del líquido según ingredientes, hielo (`ice.serve`) y `garnish`.
   - **Sin texto dentro de la imagen:** el nombre lo pone la app (accesibilidad, sin errores de tipeo como en la referencia).

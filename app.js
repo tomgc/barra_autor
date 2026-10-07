@@ -185,11 +185,30 @@ function availabilityText(ev) {
   return `<span class="st-miss">● Falta: ${ev.missingIngredients.map((id) => esc(ingredientName(id))).join(", ")}</span>`;
 }
 
+// Ilustraciones (spec §37). Recetas sin imagen (personales, Laboratorio) y archivos que no cargan usan la genérica.
+const GENERIC_IMAGE = {
+  src: "assets/cocktails/_generica.webp",
+  thumb: "assets/cocktails/_generica-256.webp",
+  alt: "Ilustración genérica de una copa vacía"
+};
+
+function imageOf(recipe) {
+  const img = recipe?.image;
+  if (!img?.src) return GENERIC_IMAGE;
+  return { ...GENERIC_IMAGE, ...img, thumb: img.thumb ?? img.src };
+}
+
+// Miniatura de tarjeta: alt vacío porque el nombre de la receta ya está al lado.
+function thumbHtml(recipe) {
+  return `<img class="thumb" src="${esc(imageOf(recipe).thumb)}" width="56" height="56" alt="" loading="lazy" decoding="async" data-fallback="${GENERIC_IMAGE.thumb}">`;
+}
+
 function recipeCard(recipe, ev) {
   const u = userEntry(recipe.id);
   const house = recipe.collections.includes("house");
   return `
-    <a class="card recipe-card" href="#/receta/${esc(recipe.id)}">
+    <a class="card recipe-card has-thumb" href="#/receta/${esc(recipe.id)}">
+      ${thumbHtml(recipe)}
       <span class="title">${esc(recipe.name)}${u.favorite ? ` <span class="st-low" aria-label="Favorito">★</span>` : ""}</span>
       <span class="badge${house ? " house" : ""}">${esc(SOURCE_LABELS[recipe.source] ?? recipe.source)}</span>
       <span class="meta">${esc(recipe.family ?? "")} · ${esc(baseLabel(recipe.baseSpirit))}${u.status === "tested" ? " · Probado" : ""}${u.rating ? ` · ${"★".repeat(u.rating)}` : ""}</span>
@@ -347,6 +366,7 @@ function viewRecipe(id) {
   return `
     ${storageBanner()}
     <p><a href="#/recetas">← Recetas</a></p>
+    <img class="recipe-hero" src="${esc(imageOf(recipe).src)}" width="512" height="512" alt="${esc(imageOf(recipe).alt)}" decoding="async" data-fallback="${GENERIC_IMAGE.src}">
     <div class="recipe-head">
       <h2>${esc(recipe.name)}</h2>
       <button class="icon-btn" data-action="fav" data-id="${esc(recipe.id)}" aria-pressed="${u.favorite}" aria-label="${u.favorite ? "Quitar de favoritos" : "Marcar como favorito"}">${STAR_ICON(u.favorite)}</button>
@@ -647,7 +667,8 @@ function viewLab() {
 
     <h3>Borradores</h3>
     ${drafts.length ? drafts.map((d) => `
-      <a class="card recipe-card" href="#/lab/${esc(d.id)}">
+      <a class="card recipe-card has-thumb" href="#/lab/${esc(d.id)}">
+        ${thumbHtml(d)}
         <span class="title">${esc(d.name)}</span>
         <span class="badge">Borrador</span>
         <span class="meta">${d.ingredients.length} ingredientes · ${esc(METHOD_SHORT[d.method] ?? "")} · editado ${fmtDate(d.updatedAt)}${d.parentId ? ` · variante de ${esc(allRecipes().find((r) => r.id === d.parentId)?.name ?? d.parentId)}` : ""}</span>
@@ -1237,6 +1258,11 @@ function init() {
   document.addEventListener("click", onClick);
   document.addEventListener("input", onInput);
   document.addEventListener("change", onChange);
+  // Si una ilustración no carga, se cae a la genérica. Los eventos error no burbujean: se captura.
+  document.addEventListener("error", (e) => {
+    const el = e.target;
+    if (el instanceof HTMLImageElement && el.dataset.fallback && !el.src.endsWith(el.dataset.fallback)) el.src = el.dataset.fallback;
+  }, true);
   window.addEventListener("hashchange", () => { app.ui.confirmReset = false; app.ui.confirmDelete = null; app.ui.labErrors = []; render({ focus: true }); });
   render();
   registerServiceWorker();
