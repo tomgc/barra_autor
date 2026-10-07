@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Ilustración de Moscow Mule: taza Mule de cobre con líquido pálido turbio, con hielo y rodaja de lima">
+<defs>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="39" result="n"></feTurbulence>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0.22 -0.06" result="speck"></feColorMatrix>
+<feComposite in="speck" in2="SourceGraphic" operator="over"></feComposite>
+</filter>
+<filter id="pencil" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="32" result="grain"></feTurbulence>
+<feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.25" result="mask"></feColorMatrix>
+<feComposite in="SourceGraphic" in2="mask" operator="in" result="tex"></feComposite>
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="37" result="warp"></feTurbulence>
+<feDisplacementMap in="tex" in2="warp" scale="3.5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<filter id="line" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="30" result="w"></feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="2.2" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#BFD88A" stroke-width="3.2" stroke-opacity="0.75"></line>
+</pattern>
+<pattern id="hatch2" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+<line x1="0" y1="0" x2="0" y2="11" stroke="#DCEBB8" stroke-width="2" stroke-opacity="0.6"></line>
+</pattern>
+<linearGradient id="liq" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#EFEBC0"></stop>
+<stop offset="1" stop-color="#E2DDA0"></stop>
+</linearGradient>
+<linearGradient id="cu" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#E4894F"></stop>
+<stop offset="0.38" stop-color="#C45F2F"></stop>
+<stop offset="0.78" stop-color="#9E4524"></stop>
+<stop offset="1" stop-color="#6E321C"></stop>
+</linearGradient>
+<pattern id="hammer" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(8)">
+<path d="M2 5 Q6 1 10 5" fill="none" stroke="#FBD9B4" stroke-width="2" stroke-opacity="0.9" stroke-linecap="round"></path>
+<path d="M5 12 Q8 9.5 11 12" fill="none" stroke="#6A3018" stroke-width="1.6" stroke-opacity="0.6" stroke-linecap="round"></path>
+</pattern>
+<pattern id="shadow" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+<line x1="0" y1="0" x2="0" y2="6" stroke="#9C8F7E" stroke-width="2" stroke-opacity="0.5"></line>
+</pattern>
+</defs>
+
+<rect width="512" height="512" fill="#F3EBDD" filter="url(#paper)"></rect>
+
+<g filter="url(#pencil)">
+<g transform="translate(0 40)"><path d="M140 252 C134 156 226 100 304 116 C384 134 404 236 374 306 C344 372 258 396 192 362 C146 338 144 296 140 252 Z" fill="url(#hatch)"></path>
+<path d="M164 242 C170 170 248 132 314 152 C364 168 376 252 346 308 C318 356 240 364 202 336 C174 314 162 278 164 242 Z" fill="url(#hatch2)"></path></g>
+<ellipse cx="256" cy="416" rx="82" ry="12" fill="url(#shadow)"></ellipse>
+</g>
+
+<g filter="url(#pencil)">
+<path d="M324 256 C400 238 404 376 312 368 L313 348 C366 352 364 274 325 276 Z" fill="#C9794A"></path>
+<path d="M186 232 L200 402 Q256 412 312 402 L326 232 Z" fill="url(#cu)"></path><path d="M186 232 L200 402 Q256 412 312 402 L326 232 Z" fill="url(#hammer)"></path>
+<path d="M212 258 Q216 330 224 384" fill="none" stroke="#FFE3C4" stroke-width="9" stroke-linecap="round" stroke-opacity="0.65"></path>
+<ellipse cx="256" cy="232" rx="70" ry="13" fill="#EDB78C"></ellipse>
+<ellipse cx="256" cy="233" rx="62" ry="9.5" fill="#EFEBC0"></ellipse>
+<ellipse cx="256" cy="234" rx="56" ry="7" fill="#F2EFCB"></ellipse>
+</g>
+<g filter="url(#pencil)">
+<rect x="226" y="220" width="26" height="22" rx="7" transform="rotate(-8 239 231)" fill="#F4FBFB" fill-opacity="0.78"></rect>
+<rect x="270" y="223" width="28" height="24" rx="7" transform="rotate(10 284 235)" fill="#F4FBFB" fill-opacity="0.78"></rect>
+</g>
+
+<g filter="url(#line)" fill="none" stroke="#3B332C" stroke-linecap="round" stroke-linejoin="round">
+<path d="M324 256 C400 238 404 376 312 368 L313 348 C366 352 364 274 325 276 Z" stroke-width="2.4"></path>
+<path d="M186 232 L200 402 Q256 412 312 402 L326 232 Z" stroke-width="2.4"></path>
+<ellipse cx="256" cy="232" rx="70" ry="13" stroke-width="2.2"></ellipse>
+<ellipse cx="256" cy="233" rx="62" ry="9.5" stroke-width="1.6" stroke-opacity="0.75"></ellipse>
+<path d="M190 262 Q256 272 322 262" stroke-width="1.4" stroke-opacity="0.45"></path>
+<circle cx="327" cy="266" r="2.6" stroke-width="1.4"></circle><circle cx="316" cy="356" r="2.6" stroke-width="1.4"></circle>
+<path d="M232 266 L228 376" stroke="#FFFFFF" stroke-width="2.4" stroke-opacity="0.75"></path>
+<rect x="226" y="220" width="26" height="22" rx="7" transform="rotate(-8 239 231)" stroke="#7FB3B6" stroke-width="1.6"></rect>
+<rect x="270" y="223" width="28" height="24" rx="7" transform="rotate(10 284 235)" stroke="#7FB3B6" stroke-width="1.6"></rect>
+</g>
+
+<g filter="url(#pencil)">
+<g transform="rotate(0 318 224)"><circle cx="318" cy="224" r="30" fill="#7FB43A"></circle><circle cx="318" cy="224" r="26" fill="#E8F3C0"></circle><circle cx="318" cy="224" r="22" fill="#A9D34F"></circle><path d="M320.9 224.6 L338.6 228.2 M319.9 226.3 L331.1 240.4 M317.9 227 L317.5 245 M316 226.2 L304.1 239.7 M315 224.4 L297.2 227.1 M315.4 222.4 L300.1 213 M317 221.2 L311.3 204.1 M319.1 221.2 L325.7 204.5 M320.6 222.6 L336.4 214 " fill="none" stroke="#E8F3C0" stroke-width="2.2" stroke-linecap="round"></path></g>
+</g>
+<g filter="url(#line)">
+<g transform="rotate(0 318 224)"><circle cx="318" cy="224" r="30" fill="none" stroke="#4F6E14" stroke-width="1.8"></circle><circle cx="318" cy="224" r="22" fill="none" stroke="#4F6E14" stroke-width="0.9" stroke-opacity="0.55"></circle></g>
+</g>
+</svg>

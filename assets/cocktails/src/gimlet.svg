@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Ilustración de Gimlet: copa Nick and Nora con líquido verde lima pálido y piel de lima">
+<defs>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="45" result="n"></feTurbulence>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0.22 -0.06" result="speck"></feColorMatrix>
+<feComposite in="speck" in2="SourceGraphic" operator="over"></feComposite>
+</filter>
+<filter id="pencil" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="38" result="grain"></feTurbulence>
+<feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.25" result="mask"></feColorMatrix>
+<feComposite in="SourceGraphic" in2="mask" operator="in" result="tex"></feComposite>
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="43" result="warp"></feTurbulence>
+<feDisplacementMap in="tex" in2="warp" scale="3.5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<filter id="line" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="36" result="w"></feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="2.2" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#A9D056" stroke-width="3.2" stroke-opacity="0.75"></line>
+</pattern>
+<pattern id="hatch2" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+<line x1="0" y1="0" x2="0" y2="11" stroke="#D2E6A0" stroke-width="2" stroke-opacity="0.6"></line>
+</pattern>
+<linearGradient id="liq" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#E3ECAA"></stop>
+<stop offset="1" stop-color="#C9DB84"></stop>
+</linearGradient>
+<pattern id="shadow" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+<line x1="0" y1="0" x2="0" y2="6" stroke="#9C8F7E" stroke-width="2" stroke-opacity="0.5"></line>
+</pattern>
+</defs>
+
+<rect width="512" height="512" fill="#F3EBDD" filter="url(#paper)"></rect>
+
+<g filter="url(#pencil)">
+<g transform="translate(0 0)"><path d="M140 252 C134 156 226 100 304 116 C384 134 404 236 374 306 C344 372 258 396 192 362 C146 338 144 296 140 252 Z" fill="url(#hatch)"></path>
+<path d="M164 242 C170 170 248 132 314 152 C364 168 376 252 346 308 C318 356 240 364 202 336 C174 314 162 278 164 242 Z" fill="url(#hatch2)"></path></g>
+<ellipse cx="256" cy="414" rx="78" ry="12" fill="url(#shadow)"></ellipse>
+</g>
+
+<g filter="url(#pencil)">
+<path d="M194.8 196 Q256 196 317.2 196 L317.1 197.7 L316.4 206.1 L315.4 214 L314.3 221.6 L313 228.8 L311.5 235.6 L309.8 242 L307.9 248.1 L305.8 253.8 L303.5 259.1 L301 264 L298.3 268.6 L295.4 272.8 L292.4 276.6 L289.1 280 L285.7 283.1 L282 285.8 L278.2 288.1 L274.1 290 L269.9 291.6 L265.4 292.8 L260.8 293.6 L256 294 Q256 294 256 294 L251.2 293.6 L246.6 292.8 L242.1 291.6 L237.9 290 L233.8 288.1 L230 285.8 L226.3 283.1 L222.9 280 L219.6 276.6 L216.6 272.8 L213.7 268.6 L211 264 L208.5 259.1 L206.2 253.8 L204.1 248.1 L202.2 242 L200.5 235.6 L199 228.8 L197.7 221.6 L196.6 214 L195.6 206.1 L194.9 197.7 L194.8 196 Z" fill="url(#liq)"></path>
+<path d="M215.4 204L217.7 221.6L222.2 242L228.5 259.1L236.6 272.8L237.9 274.4" fill="none" stroke="#F1F6D5" stroke-width="5" stroke-linecap="round" stroke-opacity="0.85"></path>
+<ellipse cx="256" cy="196" rx="61.2" ry="7.8" fill="#E6EEB3"></ellipse>
+</g>
+
+<g filter="url(#line)" fill="none" stroke="#3B332C" stroke-linecap="round" stroke-linejoin="round">
+<path d="M194 180L194.3 189.1L194.9 197.7L195.6 206.1L196.6 214L197.7 221.6L199 228.8L200.5 235.6L202.2 242L204.1 248.1L206.2 253.8L208.5 259.1L211 264L213.7 268.6L216.6 272.8L219.6 276.6L222.9 280L226.3 283.1L230 285.8L233.8 288.1L237.9 290L242.1 291.6L246.6 292.8L251.2 293.6L256 294L260.8 293.6L265.4 292.8L269.9 291.6L274.1 290L278.2 288.1L282 285.8L285.7 283.1L289.1 280L292.4 276.6L295.4 272.8L298.3 268.6L301 264L303.5 259.1L305.8 253.8L307.9 248.1L309.8 242L311.5 235.6L313 228.8L314.3 221.6L315.4 214L316.4 206.1L317.1 197.7L317.7 189.1L318 180" stroke-width="2.4"></path>
+<ellipse cx="256" cy="180" rx="62" ry="9" stroke-width="2.2"></ellipse>
+<path d="M251 294 L252 398 M261 294 L260 398" stroke-width="2.2"></path>
+<path d="M206 404 Q256 392 306 404 Q256 418 206 404 Z" stroke-width="2.2"></path>
+<path d="M203.3 188L204.6 206.1L208 228.8L213.1 248.1L220 264L222.9 268.9" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.9"></path>
+<path d="M305.6 190L303.4 214L299.8 234" stroke="#FFFFFF" stroke-width="2.4" stroke-opacity="0.8"></path>
+</g>
+
+<g filter="url(#pencil)">
+<g transform="translate(0 0)"><path d="M296 178 C312 160 330 168 342 150 C350 138 364 140 368 146 C354 150 350 166 332 176 C320 184 306 186 296 178 Z" fill="#9CC94A"></path><path d="M304 176 C318 166 334 168 346 154" fill="none" stroke="#D5EC9A" stroke-width="3" stroke-linecap="round"></path></g>
+</g>
+<g filter="url(#line)">
+<g transform="translate(0 0)"><path d="M296 178 C312 160 330 168 342 150 C350 138 364 140 368 146 C354 150 350 166 332 176 C320 184 306 186 296 178 Z" fill="none" stroke="#4F6E14" stroke-width="1.8" stroke-linejoin="round"></path></g>
+</g>
+</svg>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Ilustración de Gin Fizz: tumbler alto con líquido blanco turbio con burbujas y rodaja de limón">
+<defs>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="44" result="n"></feTurbulence>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0.22 -0.06" result="speck"></feColorMatrix>
+<feComposite in="speck" in2="SourceGraphic" operator="over"></feComposite>
+</filter>
+<filter id="pencil" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="37" result="grain"></feTurbulence>
+<feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.25" result="mask"></feColorMatrix>
+<feComposite in="SourceGraphic" in2="mask" operator="in" result="tex"></feComposite>
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="42" result="warp"></feTurbulence>
+<feDisplacementMap in="tex" in2="warp" scale="3.5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<filter id="line" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="35" result="w"></feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="2.2" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#E2DA8E" stroke-width="3.2" stroke-opacity="0.75"></line>
+</pattern>
+<pattern id="hatch2" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+<line x1="0" y1="0" x2="0" y2="11" stroke="#F0EBC0" stroke-width="2" stroke-opacity="0.6"></line>
+</pattern>
+<linearGradient id="liq" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#EFE8D2"></stop>
+<stop offset="1" stop-color="#D8CFB4"></stop>
+</linearGradient>
+<pattern id="shadow" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+<line x1="0" y1="0" x2="0" y2="6" stroke="#9C8F7E" stroke-width="2" stroke-opacity="0.5"></line>
+</pattern>
+</defs>
+
+<rect width="512" height="512" fill="#F3EBDD" filter="url(#paper)"></rect>
+
+<g filter="url(#pencil)">
+<g transform="translate(0 22)"><path d="M150 250 C140 150 230 104 300 120 C380 138 400 230 372 300 C346 366 262 392 196 360 C150 338 156 300 150 250 Z" fill="url(#hatch)"></path>
+<path d="M170 240 C176 170 250 136 312 156 C360 172 372 250 344 304 C318 352 244 362 206 334 C178 312 168 276 170 240 Z" fill="url(#hatch2)"></path></g>
+<ellipse cx="256" cy="418" rx="76" ry="12" fill="url(#shadow)"></ellipse>
+</g>
+
+<g filter="url(#pencil)">
+<path d="M198.5 212 Q256 212 313.5 212 L308.1 404 Q256 404 203.9 404 L198.5 212 Z" fill="url(#liq)"></path>
+<path d="M218.7 220L222.8 365.6" fill="none" stroke="#F7F4E9" stroke-width="5" stroke-linecap="round" stroke-opacity="0.85"></path>
+<circle cx="292.9" cy="334.6" r="2.4" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="269" cy="290.3" r="1.7" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="275.7" cy="307.8" r="1.4" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="268.2" cy="318.6" r="1.5" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="295.1" cy="249.5" r="2.3" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="252.6" cy="254.1" r="2.6" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="221.7" cy="326.8" r="1.6" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="266.3" cy="381.3" r="2.5" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="234.3" cy="289.8" r="2.1" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="239.1" cy="327.9" r="1.7" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="222.2" cy="382.1" r="1.5" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="255.4" cy="311.3" r="2" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="275" cy="387.5" r="2.4" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="277.6" cy="313" r="1.5" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="272.7" cy="289" r="2.2" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="257" cy="360.8" r="2.5" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="250" cy="280.6" r="1.5" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="224.9" cy="375.3" r="2.1" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="246.3" cy="349.4" r="1.7" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+<circle cx="269.7" cy="281" r="1.8" fill="#FFFFFF" stroke="#9C8F7E" stroke-width="0.7" stroke-opacity="0.5"></circle>
+
+</g>
+
+<g filter="url(#line)" fill="none" stroke="#3B332C" stroke-linecap="round" stroke-linejoin="round">
+<path d="M198 196 L204 406 Q256 414 308 406 L314 196" stroke-width="2.4"></path>
+<ellipse cx="256" cy="196" rx="58" ry="8.4" stroke-width="2.2"></ellipse>
+<path d="M198.5 212 Q256 220 313.5 212" stroke="#AAA08E" stroke-width="1.6" stroke-opacity="0.8"></path>
+<path d="M212.3 208L217.5 390" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.9"></path>
+<path d="M299.7 206L297.6 280" stroke="#FFFFFF" stroke-width="2.4" stroke-opacity="0.8"></path>
+</g>
+
+<g filter="url(#pencil)">
+<g transform="rotate(0 306 190)"><circle cx="306" cy="190" r="30" fill="#F2D13A"></circle><circle cx="306" cy="190" r="26" fill="#FFF6C8"></circle><circle cx="306" cy="190" r="22" fill="#F7E36A"></circle><path d="M308.9 190.6 L326.6 194.2 M307.9 192.3 L319.1 206.4 M305.9 193 L305.5 211 M304 192.2 L292.1 205.7 M303 190.4 L285.2 193.1 M303.4 188.4 L288.1 179 M305 187.2 L299.3 170.1 M307.1 187.2 L313.7 170.5 M308.6 188.6 L324.4 180 " fill="none" stroke="#FFF6C8" stroke-width="2.2" stroke-linecap="round"></path></g>
+</g>
+<g filter="url(#line)">
+<g transform="rotate(0 306 190)"><circle cx="306" cy="190" r="30" fill="none" stroke="#A88A12" stroke-width="1.8"></circle><circle cx="306" cy="190" r="22" fill="none" stroke="#A88A12" stroke-width="0.9" stroke-opacity="0.55"></circle></g>
+</g>
+</svg>

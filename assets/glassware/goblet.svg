@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Ilustración de cristalería: copa goblet vacía">
+<defs>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="65" result="n"></feTurbulence>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0.22 -0.06" result="speck"></feColorMatrix>
+<feComposite in="speck" in2="SourceGraphic" operator="over"></feComposite>
+</filter>
+<filter id="pencil" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="58" result="grain"></feTurbulence>
+<feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.25" result="mask"></feColorMatrix>
+<feComposite in="SourceGraphic" in2="mask" operator="in" result="tex"></feComposite>
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="63" result="warp"></feTurbulence>
+<feDisplacementMap in="tex" in2="warp" scale="3.5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<filter id="line" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="56" result="w"></feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="2.2" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#B3A998" stroke-width="3.2" stroke-opacity="0.42"></line>
+</pattern>
+<pattern id="hatch2" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+<line x1="0" y1="0" x2="0" y2="11" stroke="#D3CABB" stroke-width="2" stroke-opacity="0.38"></line>
+</pattern>
+<pattern id="shadow" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+<line x1="0" y1="0" x2="0" y2="6" stroke="#9C8F7E" stroke-width="2" stroke-opacity="0.5"></line>
+</pattern>
+</defs>
+
+<rect width="512" height="512" fill="#F3EBDD" filter="url(#paper)"></rect>
+
+<g filter="url(#pencil)">
+<g transform="translate(0 0)"><path d="M140 252 C134 156 226 100 304 116 C384 134 404 236 374 306 C344 372 258 396 192 362 C146 338 144 296 140 252 Z" fill="url(#hatch)"></path>
+<path d="M164 242 C170 170 248 132 314 152 C364 168 376 252 346 308 C318 356 240 364 202 336 C174 314 162 278 164 242 Z" fill="url(#hatch2)"></path></g>
+<ellipse cx="256" cy="416" rx="82" ry="12" fill="url(#shadow)"></ellipse>
+</g>
+
+<g filter="url(#pencil)">
+<path d="M182.2 176 Q256 176 329.8 176 L329.6 182.9 L328.9 193.4 L328 203.5 L326.8 213 L325.5 222.1 L323.9 230.8 L322.1 239 L320 246.8 L317.7 254.1 L315.2 260.9 L312.5 267.3 L309.5 273.3 L306.3 278.7 L302.9 283.8 L299.2 288.3 L295.3 292.4 L291.2 296.1 L286.9 299.3 L282.3 302.1 L277.5 304.4 L272.5 306.2 L267.2 307.6 L261.7 308.5 L256 309 Q256 309 256 309 L250.3 308.5 L244.8 307.6 L239.5 306.2 L234.5 304.4 L229.7 302.1 L225.1 299.3 L220.8 296.1 L216.7 292.4 L212.8 288.3 L209.1 283.8 L205.7 278.7 L202.5 273.3 L199.5 267.3 L196.8 260.9 L194.3 254.1 L192 246.8 L189.9 239 L188.1 230.8 L186.5 222.1 L185.2 213 L184 203.5 L183.1 193.4 L182.4 182.9 L182.2 176 Z" fill="#FFFFFF" fill-opacity="0.34"></path>
+</g>
+
+<g filter="url(#line)" fill="none" stroke="#3B332C" stroke-linecap="round" stroke-linejoin="round">
+<path d="M182 172L182.4 182.9L183.1 193.4L184 203.5L185.2 213L186.5 222.1L188.1 230.8L189.9 239L192 246.8L194.3 254.1L196.8 260.9L199.5 267.3L202.5 273.3L205.7 278.7L209.1 283.8L212.8 288.3L216.7 292.4L220.8 296.1L225.1 299.3L229.7 302.1L234.5 304.4L239.5 306.2L244.8 307.6L250.3 308.5L256 309L261.7 308.5L267.2 307.6L272.5 306.2L277.5 304.4L282.3 302.1L286.9 299.3L291.2 296.1L295.3 292.4L299.2 288.3L302.9 283.8L306.3 278.7L309.5 273.3L312.5 267.3L315.2 260.9L317.7 254.1L320 246.8L322.1 239L323.9 230.8L325.5 222.1L326.8 213L328 203.5L328.9 193.4L329.6 182.9L330 172" stroke-width="2.4"></path>
+<ellipse cx="256" cy="172" rx="74" ry="10.7" stroke-width="2.2"></ellipse>
+<path d="M251 309 Q248 350 249 398 M261 309 Q264 350 263 398" stroke-width="2.2"></path>
+<path d="M202 404 Q256 392 310 404 Q256 418 202 404 Z" stroke-width="2.2"></path>
+<path d="M191.3 180L193 203.5L197.1 230.8L203.3 254.1L211.5 273.3L214.8 278.9" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.9"></path>
+<path d="M317.6 182L316 203.5L312.8 226" stroke="#FFFFFF" stroke-width="2.4" stroke-opacity="0.8"></path>
+</g>
+
+</svg>

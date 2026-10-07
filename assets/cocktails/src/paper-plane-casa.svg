@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Ilustración de Paper Plane Casa: copa coupe con líquido naranja rojizo turbio, sin garnish">
+<defs>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="24" result="n"></feTurbulence>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0.22 -0.06" result="speck"></feColorMatrix>
+<feComposite in="speck" in2="SourceGraphic" operator="over"></feComposite>
+</filter>
+<filter id="pencil" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="17" result="grain"></feTurbulence>
+<feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.25" result="mask"></feColorMatrix>
+<feComposite in="SourceGraphic" in2="mask" operator="in" result="tex"></feComposite>
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="22" result="warp"></feTurbulence>
+<feDisplacementMap in="tex" in2="warp" scale="3.5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<filter id="line" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="15" result="w"></feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="2.2" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#F0B28C" stroke-width="3.2" stroke-opacity="0.75"></line>
+</pattern>
+<pattern id="hatch2" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+<line x1="0" y1="0" x2="0" y2="11" stroke="#F7D4BC" stroke-width="2" stroke-opacity="0.6"></line>
+</pattern>
+<linearGradient id="liq" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#EB8E4F"></stop>
+<stop offset="1" stop-color="#C36136"></stop>
+</linearGradient>
+<pattern id="shadow" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+<line x1="0" y1="0" x2="0" y2="6" stroke="#9C8F7E" stroke-width="2" stroke-opacity="0.5"></line>
+</pattern>
+</defs>
+
+<rect width="512" height="512" fill="#F3EBDD" filter="url(#paper)"></rect>
+
+<g filter="url(#pencil)">
+<g transform="translate(0 28)"><path d="M140 252 C134 156 226 100 304 116 C384 134 404 236 374 306 C344 372 258 396 192 362 C146 338 144 296 140 252 Z" fill="url(#hatch)"></path>
+<path d="M164 242 C170 170 248 132 314 152 C364 168 376 252 346 308 C318 356 240 364 202 336 C174 314 162 278 164 242 Z" fill="url(#hatch2)"></path></g>
+<ellipse cx="256" cy="414" rx="80" ry="12" fill="url(#shadow)"></ellipse>
+</g>
+
+<g filter="url(#pencil)">
+<path d="M173.2 236 Q256 236 338.8 236 L338.7 236.2 L337.8 240.7 L336.5 245 L335.1 249.2 L333.3 253.3 L331.4 257.2 L329.2 261 L326.8 264.6 L324.2 268.1 L321.4 271.4 L318.4 274.5 L315.3 277.5 L311.9 280.3 L308.4 282.9 L304.7 285.4 L300.9 287.7 L296.9 289.8 L292.8 291.7 L288.5 293.4 L284.2 295 L279.7 296.3 L275.1 297.5 L270.5 298.4 L265.7 299.1 L260.9 299.7 L256 300 Q256 300 256 300 L251.1 299.7 L246.3 299.1 L241.5 298.4 L236.9 297.5 L232.3 296.3 L227.8 295 L223.5 293.4 L219.2 291.7 L215.1 289.8 L211.1 287.7 L207.3 285.4 L203.6 282.9 L200.1 280.3 L196.8 277.5 L193.6 274.5 L190.6 271.4 L187.8 268.1 L185.2 264.6 L182.8 261 L180.6 257.2 L178.7 253.3 L176.9 249.2 L175.5 245 L174.2 240.7 L173.3 236.2 L173.2 236 Z" fill="url(#liq)"></path>
+<path d="M195.2 244L198.7 253.3L205.2 264.6L213.6 274.5L223.6 282.9L230.3 287.2" fill="none" stroke="#F5C7A7" stroke-width="5" stroke-linecap="round" stroke-opacity="0.85"></path>
+<ellipse cx="256" cy="236" rx="82.8" ry="10.5" fill="#ED9961"></ellipse>
+</g>
+
+<g filter="url(#line)" fill="none" stroke="#3B332C" stroke-linecap="round" stroke-linejoin="round">
+<path d="M172 222L172.1 226.9L172.6 231.6L173.3 236.2L174.2 240.7L175.5 245L176.9 249.2L178.7 253.3L180.6 257.2L182.8 261L185.2 264.6L187.8 268.1L190.6 271.4L193.6 274.5L196.8 277.5L200.1 280.3L203.6 282.9L207.3 285.4L211.1 287.7L215.1 289.8L219.2 291.7L223.5 293.4L227.8 295L232.3 296.3L236.9 297.5L241.5 298.4L246.3 299.1L251.1 299.7L256 300L260.9 299.7L265.7 299.1L270.5 298.4L275.1 297.5L279.7 296.3L284.2 295L288.5 293.4L292.8 291.7L296.9 289.8L300.9 287.7L304.7 285.4L308.4 282.9L311.9 280.3L315.3 277.5L318.4 274.5L321.4 271.4L324.2 268.1L326.8 264.6L329.2 261L331.4 257.2L333.3 253.3L335.1 249.2L336.5 245L337.8 240.7L338.7 236.2L339.4 231.6L339.9 226.9L340 222" stroke-width="2.4"></path>
+<ellipse cx="256" cy="222" rx="84" ry="12.2" stroke-width="2.2"></ellipse>
+<path d="M251 300 L252 398 M261 300 L260 398" stroke-width="2.2"></path>
+<path d="M204 404 Q256 392 308 404 Q256 418 204 404 Z" stroke-width="2.2"></path>
+<path d="M181.4 230L183.2 240.7L187.7 253.3L194.2 264.6L202.6 274.5L212.5 282.8" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.9"></path>
+<path d="M327.4 232L324.5 245L319.4 257.2L312.2 268.1L304.9 276" stroke="#FFFFFF" stroke-width="2.4" stroke-opacity="0.8"></path>
+</g>
+
+</svg>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Ilustración de Old Fashioned: vaso Old Fashioned con líquido ámbar, con hielo y piel de naranja y una cereza">
+<defs>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="37" result="n"></feTurbulence>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0.22 -0.06" result="speck"></feColorMatrix>
+<feComposite in="speck" in2="SourceGraphic" operator="over"></feComposite>
+</filter>
+<filter id="pencil" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="30" result="grain"></feTurbulence>
+<feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.25" result="mask"></feColorMatrix>
+<feComposite in="SourceGraphic" in2="mask" operator="in" result="tex"></feComposite>
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="35" result="warp"></feTurbulence>
+<feDisplacementMap in="tex" in2="warp" scale="3.5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<filter id="line" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="28" result="w"></feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="2.2" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#E8B84E" stroke-width="3.2" stroke-opacity="0.75"></line>
+</pattern>
+<pattern id="hatch2" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+<line x1="0" y1="0" x2="0" y2="11" stroke="#F2D48F" stroke-width="2" stroke-opacity="0.6"></line>
+</pattern>
+<linearGradient id="liq" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#D98C2F"></stop>
+<stop offset="1" stop-color="#A15A16"></stop>
+</linearGradient>
+<pattern id="shadow" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+<line x1="0" y1="0" x2="0" y2="6" stroke="#9C8F7E" stroke-width="2" stroke-opacity="0.5"></line>
+</pattern>
+</defs>
+
+<rect width="512" height="512" fill="#F3EBDD" filter="url(#paper)"></rect>
+
+<g filter="url(#pencil)">
+<g transform="translate(0 46)"><path d="M146 256 C138 158 228 100 304 116 C384 134 404 236 374 306 C344 372 258 400 192 366 C148 342 150 300 146 256 Z" fill="url(#hatch)"></path>
+<path d="M168 244 C174 172 250 134 314 154 C364 170 376 254 346 310 C318 358 240 366 202 338 C176 316 166 280 168 244 Z" fill="url(#hatch2)"></path></g>
+<ellipse cx="256" cy="418" rx="86" ry="12" fill="url(#shadow)"></ellipse>
+</g>
+
+<g filter="url(#pencil)">
+<path d="M190.1 376 Q256 376 321.9 376 L320.1 404 Q256 404 191.9 404 L190.1 376 Z" fill="#FFFFFF" fill-opacity="0.34"></path>
+<path d="M183.2 270 Q256 270 328.8 270 L321.9 376 Q256 376 190.1 376 L183.2 270 Z" fill="url(#liq)"></path>
+<rect x="212" y="284" width="46" height="44" rx="7" transform="rotate(-8 235 306)" fill="#F4FBFB" fill-opacity="0.78"></rect>
+<rect x="262" y="292" width="48" height="46" rx="7" transform="rotate(10 286 315)" fill="#F4FBFB" fill-opacity="0.78"></rect>
+<rect x="226" y="332" width="46" height="44" rx="7" transform="rotate(5 249 354)" fill="#F4FBFB" fill-opacity="0.78"></rect>
+<rect x="272" y="344" width="42" height="40" rx="7" transform="rotate(-6 293 364)" fill="#F4FBFB" fill-opacity="0.78"></rect>
+<path d="M298 356 C301 340 310 332 320 330" fill="none" stroke="#6B4E2A" stroke-width="2.4" stroke-linecap="round"></path><circle cx="298" cy="366" r="12" fill="#A10F24"></circle><circle cx="300" cy="368" r="8" fill="#6E0816" fill-opacity="0.6"></circle><ellipse cx="293.5" cy="361.5" rx="3.6" ry="2.4" fill="#FFB3AE" transform="rotate(-35 293.5 361.5)"></ellipse>
+</g>
+
+<g filter="url(#line)" fill="none" stroke="#3B332C" stroke-linecap="round" stroke-linejoin="round">
+<path d="M182 252 L192 406 Q256 414 320 406 L330 252" stroke-width="2.4"></path>
+<ellipse cx="256" cy="252" rx="74" ry="10.7" stroke-width="2.2"></ellipse>
+<path d="M190.1 376 Q256 385 321.9 376" stroke-width="1.6" stroke-opacity="0.7"></path>
+<path d="M183.2 270 Q256 278 328.8 270" stroke="#9E6525" stroke-width="1.6" stroke-opacity="0.8"></path>
+<path d="M196.8 264L203.1 362" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.9"></path>
+<path d="M315.4 262L310.5 336" stroke="#FFFFFF" stroke-width="2.4" stroke-opacity="0.8"></path>
+<rect x="212" y="284" width="46" height="44" rx="7" transform="rotate(-8 235 306)" stroke="#7FB3B6" stroke-width="1.6"></rect>
+<rect x="262" y="292" width="48" height="46" rx="7" transform="rotate(10 286 315)" stroke="#7FB3B6" stroke-width="1.6"></rect>
+<rect x="226" y="332" width="46" height="44" rx="7" transform="rotate(5 249 354)" stroke="#7FB3B6" stroke-width="1.6"></rect>
+<rect x="272" y="344" width="42" height="40" rx="7" transform="rotate(-6 293 364)" stroke="#7FB3B6" stroke-width="1.6"></rect>
+<circle cx="298" cy="366" r="12" fill="none" stroke="#4A0E14" stroke-width="1.8"></circle>
+</g>
+
+<g filter="url(#pencil)">
+<g transform="translate(22 92)"><path d="M296 176 C304 150 324 138 344 140 C336 154 322 170 300 184 Z" fill="#F29A2E"></path><path d="M302 176 C312 160 326 150 338 146" fill="none" stroke="#FFD08A" stroke-width="3" stroke-linecap="round"></path></g>
+</g>
+<g filter="url(#line)">
+<g transform="translate(22 92)"><path d="M296 176 C304 150 324 138 344 140 C336 154 322 170 300 184 Z" fill="none" stroke="#9A4E10" stroke-width="1.8" stroke-linejoin="round"></path></g>
+</g>
+</svg>
