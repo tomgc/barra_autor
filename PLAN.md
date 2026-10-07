@@ -1,6 +1,6 @@
 # Mi Barra de Autor: plan de proyecto
 
-Versión 10 (2026-10-07). Leyenda: [x] hecho · [~] motor listo, falta UI · [ ] pendiente. Fuente: `mi-barra-de-autor-especificacion.md` (50 secciones).
+Versión 11 (2026-10-07). Leyenda: [x] hecho · [~] motor listo, falta UI · [ ] pendiente. Fuente: `mi-barra-de-autor-especificacion.md` (50 secciones).
 
 ## 1. Decisiones tomadas
 
@@ -100,7 +100,7 @@ Clasificación hipotética, verificar con la investigación de F1.
 
 ## 7. Próximo paso
 
-F1, F2 y F3 cerradas; validación §49 completa (ver §10). Repositorio git local creado (rama `main`, remoto `origin` → `https://github.com/tomgc/barra_autor.git`). Siguiente: Tomás crea el repo vacío en GitHub, hace push y activa Pages; luego los pendientes de §8.
+F1, F2 y F3 cerradas; validación §49 completa (ver §10). Publicada en https://tomgc.github.io/barra_autor/ (repo `tomgc/barra_autor`, rama `main`; verificado 2026-10-07: 79/79 pruebas, sin errores de consola, offline OK). Siguiente: pendientes de §8.
 
 ## 8. Pendientes fuera de fase
 
