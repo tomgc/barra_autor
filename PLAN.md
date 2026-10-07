@@ -1,6 +1,6 @@
 # Mi Barra de Autor: plan de proyecto
 
-Versión 11 (2026-10-07). Leyenda: [x] hecho · [~] motor listo, falta UI · [ ] pendiente. Fuente: `mi-barra-de-autor-especificacion.md` (50 secciones).
+Versión 12 (2026-10-07). Leyenda: [x] hecho · [~] motor listo, falta UI · [ ] pendiente. Fuente: `mi-barra-de-autor-especificacion.md` (50 secciones).
 
 ## 1. Decisiones tomadas
 
@@ -17,6 +17,7 @@ Versión 11 (2026-10-07). Leyenda: [x] hecho · [~] motor listo, falta UI · [ ]
 | D10 | Terrones y azúcar con alternativa en jarabe (`alternatives` por línea, cantidad propia) | Pedido de Tomás: los terrones no son comunes en casa. Equivalencias desde Difford's (jarabe 2:1) convertidas a jarabe 1:1. |
 | D11 | Dilución estimada por método con fuente (Cocktails & Bars, 2018: stir 40-45 %, shake ~30 %, con soda ~20 %); build sin mixer 20 % marcado como supuesto. Se eliminó el campo `dilution` fijo de las recetas | El campo fijo contradecía la fuente (sours marcados "alta" con ~30 %) |
 | D12 | Íconos de la PWA provisionales (copa geométrica ámbar) | Se reemplazan con el encargo de iconografía (§8) |
+| D13 | Ilustraciones dibujadas como SVG (Claude Design / Claude Code) y servidas como WebP generado en R | Tomás eligió Claude Design y aprobó el estilo del piloto; WebP evita pintar filtros SVG pesados en el teléfono |
 | D8 | `validation` en cada receta: owner / verified / approved | Trazabilidad de cada spec: entregada por Tomás, contrastada con la referencia, o propuesta y aprobada. |
 
 ## 2. Modelo de datos (corrección clave de la spec)
@@ -100,13 +101,13 @@ Clasificación hipotética, verificar con la investigación de F1.
 
 ## 7. Próximo paso
 
-F1, F2 y F3 cerradas; validación §49 completa (ver §10). Publicada en https://tomgc.github.io/barra_autor/ (repo `tomgc/barra_autor`, rama `main`; verificado 2026-10-07: 79/79 pruebas, sin errores de consola, offline OK). Siguiente: pendientes de §8.
+F1, F2 y F3 cerradas; validación §49 completa (ver §10). Publicada en https://tomgc.github.io/barra_autor/ (repo `tomgc/barra_autor`, rama `main`; verificado 2026-10-07: 79/79 pruebas, sin errores de consola, offline OK). Siguiente: ejecutar el encargo de iconografía en Claude Code; luego la sesión de búsqueda de recetas (§8).
 
 ## 8. Pendientes fuera de fase
 
 - [ ] Sesión dedicada a búsqueda intensa en internet de recetas para ampliar la biblioteca de cócteles (pedido de Tomás, 2026-10-07). Mantener criterios §3 de la spec: verificar specs con fuentes reconocidas, distinguir clásico / riff / autor / personal, no copiar texto.
 
-- [ ] Encargo a Claude Code: generación de la iconografía del proyecto (pedido de Tomás, 2026-10-07). Referencia de estilo: `assets/reference/estilo-iconos-referencia.png`.
+- [~] Encargo a Claude Code: generación de la iconografía del proyecto (pedido de Tomás, 2026-10-07). **Estado:** estilo aprobado por Tomás sobre un piloto de 3 ilustraciones hecho en Claude Design (SVG con textura de lápiz simulada); plantillas en `assets/cocktails/src/`; encargo redactado en `encargos/2026-10-07_iconografia_claude_code.md` (SVG fuente → WebP vía R). Lo que sigue en este punto queda como diseño original, reemplazado por el encargo donde difieran. Referencia de estilo: `assets/reference/estilo-iconos-referencia.png`.
   - **Estilo:** ilustración a mano en lápiz de colores, con trazo visible y sombreado por hachurado; papel color crema con textura; un halo suave de color detrás de cada vaso, del tono del cóctel; contorno del vaso fino y oscuro, con brillos blancos; líquido con degradé; hielo translúcido; garnish detallado (piel de cítrico, cereza, menta, rodaja); colores cálidos y saturados sin ser chillones; elegante, no infantil (spec §37).
   - **Qué tomar de la referencia y qué no:** solo el estilo. Su contenido tiene errores ("Negroni" repetido y dibujado como shot en capas, "Chemones" mal escrito), así que cada dibujo debe partir de la ficha real de la receta: vaso (`glass`), color del líquido según ingredientes, hielo (`ice.serve`) y `garnish`.
   - **Sin texto dentro de la imagen:** el nombre lo pone la app (accesibilidad, sin errores de tipeo como en la referencia).
