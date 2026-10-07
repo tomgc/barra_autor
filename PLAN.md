@@ -123,6 +123,7 @@ F1, F2 y F3 cerradas; validación §49 completa (ver §10). Repositorio git loca
 | 2026-10-07 | Negroni (IBA) cargado con "cubo grande"; la IBA indica vaso lleno de cubos. Negroni Pajarillo, descrito como "Negroni IBA con gin botánico", tenía stir y piel de naranja | Negroni y Negroni Pajarillo: build, cubos, media rodaja de naranja (aprobado por Tomás) |
 | 2026-10-07 | Old Fashioned (IBA) cargado con "cubo grande"; la IBA indica llenar el vaso con cubos. Detectado al revisar método, hielo, vaso y garnish de las 24 recetas verificadas | Old Fashioned: cubos. Resto de recetas verificadas coincide con su referencia |
 | 2026-10-07 | Se subió el README al documento `claude/PLAN.md` del proyecto en claude.ai (ruta de origen equivocada) | Se reescribió `claude/PLAN.md` con el contenido del plan |
+| 2026-10-07 | Repo local configurado con el correo personal como autor de los commits; GitHub rechazó el push (GH007, correo privado) | Correo de autor cambiado a la dirección noreply de GitHub (`10123542+tomgc@users.noreply.github.com`) y commits reescritos antes del primer push |
 
 ## 10. Validación final (§49 de la spec), 2026-10-07
 
